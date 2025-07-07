@@ -1,7 +1,4 @@
 # Drug-Response-Prediction
-Comparative evaluation of machine learning models for predicting drug response using clinical variables
-
-# Glycaemic Response Prediction to Sulfonylurea Therapy in Type 2 Diabetes
 
 This repository contains all R code and supporting files used in our study comparing the predictive performance of five machine learning models and a linear regression model to predict glycaemic response (change in HbA1c) following sulfonylurea therapy in individuals with type 2 diabetes.
 
