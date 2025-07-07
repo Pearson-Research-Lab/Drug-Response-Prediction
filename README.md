@@ -10,6 +10,7 @@ The analysis aimed to evaluate whether advanced machine learning (ML) models off
 ## Repository Structure
 ├── InputData/
 │ └── cleaned_data.csv # Preprocessed clinical dataset
+
 ├── R-Codes/
 │ └── clean_transform_data.R # Data filtering, variable selection, transformation, 
 │ ├── linear_model.R # Linear regression model
