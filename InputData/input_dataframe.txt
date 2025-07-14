@@ -1,4 +1,4 @@
-Age	Sex	Average_Daily_Dose	Duration_T2D	Time_Treatment_Months	Time_to_Treatment_Days	Year_Drug_Start	BMI	Total_Chol	HDL_Chol	Creatinine	Albumin	Bilirubin	ALP	ALT	Potassium	SBP	Smoking_Status	Therapy_Group	SIMD	Ethnicity	Zone	HbA1c_Baseline	HbA1c_Outcome	Diff_HbA1c
+Age	Sex	Average_Daily_Dose	Duration_T2D	Time_Treatment_Months	Time_to_Treatment_Days	Year_Drug_Start	BMI	Total_Chol	HDL_Chol	Creatinine	Albumin	Bilirubin	ALP	ALT	Potassium	SBP	Smoking_Status	Therapy_Group	SIMD	Ethnicity	Zone	HbA1c_Baseline	Treatment_HbA1c	Diff_HbA1c
 59	Male	Low	0-1 years	9.8	-14.6	2010	27	5.02	1.37	90.3	40.3	11.1	103.3	27	4.68	143.5	Yes	Mono	1	White	Tayside	71	66	-5
 74	Male	Low	0-1 years	10.6	-13.6	2015	29.4	4.89	0.97	73.7	44.9	15.6	102.8	61.9	3.81	111.3	Yes	Mono	1	White	Tayside	53	45	-8
 82	Male	Low	0-1 years	9.4	26.7	2008	35.6	5.9	0.93	46.8	43.2	18.9	52	22.1	4.52	136.4	Yes	Mono	1	White	Tayside	77	65	-12
