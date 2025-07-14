@@ -1,24 +1,23 @@
 # Load & Prepare the Data
 
-df <- read.delim(...) 
+df <- read.delim("inputfile.txt", header=T) 
 
 # Relevel & Factorize Categorical Variables
-
-df$Ave_Dose <- relevel(..., ref = "Low")
-categorical_vars <- c("Gender", ..., "Treatment_Group")
-df[categorical_vars] <- lapply(..., as.factor)
+df$Ave_Dose <- relevel(as.factor(df$Ave_Dose), ref = "Low")
+categorical_vars <- c("Gender", "hb_code", "Ethnicity", "Ave_Dose", "Smoking_Status", "SIMD", "T2D_Duration", "Treatment_Group")
+df[categorical_vars] <- lapply(df[categorical_vars], as.factor)
 
 # Select Variables for Modeling
 selected_vars_3 <- c("Age", ..., "Diff_HbA1c")
 df_filtered <- df[selected_vars_3]
 
 # Export Descriptive Stats
-table1(~ ., data = SU_df_filtered)
-write.xlsx(...)
+tbl_df <- table1(~ ., data = df_filtered)
+openxlsx::write.xlsx(tbl_df, file = "df_summary.xlsx", rowNames = FALSE)
 
 # Log Transformation of Select Variables
 var_log <- c("BMI", "Total_Chol", ...)
-df_log[var_log] <- lapply(..., log)
+df_log[var_log] <- lapply(df_log[var_log], function(x) log(x))
 
 # Initial Full Linear Model
 full_model <- lm(Diff_HbA1c ~ ., data = df_log)
