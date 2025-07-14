@@ -1,6 +1,6 @@
 # forest_plot_function.R
 
-plot_forest_from_lm <- function(model, term_labels = NULL, x_limits = c(-8, 8), title = "Forest plot of linear regression") {
+forest_plot_from_lm <- function(model, term_labels = NULL, x_limits = c(-8, 8), title = "Forest plot of linear regression") {
   library(broom)
   library(dplyr)
   library(ggplot2)
@@ -49,3 +49,19 @@ plot_forest_from_lm <- function(model, term_labels = NULL, x_limits = c(-8, 8), 
 
   return(plot)
 }
+
+#######################################
+# Example usgae
+
+# Load model
+lm_model <- lm(outcome ~ var1 + var2 + var3, data = your_data)
+
+# Optional: create label list to rename variables
+labels <- c(
+  "log_Total_Chol" = "log(Total cholesterol)",
+  "log_BMI" = "log(BMI)",
+  "Smoking_StatusYes" = "Smoking (Yes)"
+)
+
+# Call function
+forest_plot_from_lm(model = lm_model, term_labels = labels)
