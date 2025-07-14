@@ -157,7 +157,11 @@ rmse_bart <- sqrt(mean((bart_model$yhat.test.mean - test_data_x$Diff_HbA1c)^2))
 mae_bart <- mean(abs(test_data_x$Diff_HbA1c - bart_model$yhat.test.mean))
 r_squared_bart <- cor(bart_model$yhat.test.mean, test_data_x$Diff_HbA1c)^2
 
-
+###################################################################
+# Use tests to find differences between models
+resamps <- resamples(list(LM = lm_model, SVM = svm_model, RF = rf_model))
+diffValues <- diff(resamps)
+summary(diffValues)
 
 
 
