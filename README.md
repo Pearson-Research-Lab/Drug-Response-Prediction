@@ -7,31 +7,23 @@ The analysis aimed to evaluate whether advanced machine learning (ML) models off
 ## Repository Structure
 ├── InputData/
 
-│ └── cleaned_data.csv # Preprocessed clinical dataset
+│ └── input_dataframe.txt # Preprocessed clinical dataset
 
 ├── R-Codes/
 
-│ └── clean_transform_data.R # Data filtering, variable selection, transformation, 
+│ └── Machine_learning_Regression_models.R  # Data filtering, variable selection, transformation, linear regression, Random forest, SVM, XGBoost, ANN, BART 
 
-│ ├── linear_model.R # Linear regression model
+│ └── Machine_learning_categorical_models.R # Models for binary output
 
-│ ├── bart_model.R # BART model
-
-│ ├── xgboost_model.R # XGBoost model
-
-│ ├── random_forest_model.R # Random Forest model
-
-│ ├── svm_model.R # Support Vector Machine model
-
-│ └── model_comparison.R # RMSE, R², AUC comparison
+│ └── Residualize_Baseline_HbA1c.R
 
 ├── shap/
 
-│ ├── shap_xgboost.R # SHAP plot for XGBoost
+│ └── generate_SHAP_plot.R # SHAP plot for XGBoost
 
 ├── plots/
 
-│ ├── forest_plot_pps.R # Forest plot for PPS betas/p-values
+│ └── forest_plot_from_lm.R # Forest plot for PPS betas/p-values
 
 │ └── performance_plots.R # RMSE and AUC bar plots
 
