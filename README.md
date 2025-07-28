@@ -5,9 +5,9 @@ This repository contains all R code and supporting files used in our study compa
 The analysis aimed to evaluate whether advanced machine learning (ML) models offer any predictive advantage over traditional linear regression when using only routinely collected clinical data. Our results indicate limited gains from ML methods, highlighting the dominant role of baseline HbA1c and the need for richer data sources.
 
 ## Repository Structure
-├── InputData/
+├── InputData/ # This repository contains a simulated (dummy) DataFrame intended solely to demonstrate the expected input format and structure of the data used in this project.
 
-│ └── input_dataframe.txt # Preprocessed clinical dataset
+│ └── input_dataframe.txt  # Please note: The data is entirely fictitious. The purpose of this DataFrame is to clarify the structure, data types, and objects expected in each column. This example can be used as a reference for formatting your own input data.
 
 ├── R-Codes/
 
@@ -24,7 +24,5 @@ The analysis aimed to evaluate whether advanced machine learning (ML) models off
 ├── plots/
 
 │ └── forest_plot_from_lm.R # Forest plot for PPS betas/p-values
-
-│ └── performance_plots.R # RMSE and AUC bar plots
 
 
